@@ -22,7 +22,7 @@ for(i = 0; i < amount; i ++){
 	prt.style.background = "rgb(" + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ")";
 	prt.style.left = (x + diametr * Math.sin(i / amount * 2 * Math.PI)) + "px";
 	prt.style.top = (y + diametr * Math.cos(i/amount * 2 * Math.PI)) + "px";
-	document.body.append(prt);
+	document.body.appendChild(prt);
 	mas.push(Math.random()); mas.push(Math.random());
 	mas1.push(x); mas1.push(y);
 }
