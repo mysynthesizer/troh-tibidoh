@@ -22,7 +22,7 @@ for(i = 0; i < amount; i ++){
 	let prt = document.createElement("div");
 	prt.id = "p" + i;
 	prt.className = "partycles";
-	prt.style.background = "rgb(" + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ")";
+	prt.style.background = "rgba(" + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ", " + Math.floor(256 * Math.random()) + ", 0.7)";
 	prt.style.left = (x + diametr * Math.sin(i / amount * 2 * Math.PI)) + "px";
 	prt.style.top = (y + diametr * Math.cos(i/amount * 2 * Math.PI)) + "px";
 	document.body.appendChild(prt);
